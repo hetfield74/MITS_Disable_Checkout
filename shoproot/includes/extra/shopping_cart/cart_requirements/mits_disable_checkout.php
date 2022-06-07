@@ -13,7 +13,10 @@
  */
 
 //if (!file_exists(DIR_FS_CATALOG.'includes/local/configure.php')) {
-  if (mits_check_disable_checkout()) {
+if (defined('MODULE_MITS_DISABLE_CHECKOUT_STATUS') && MODULE_MITS_DISABLE_CHECKOUT_STATUS == 'true') {
+  if (defined('MODULE_MITS_DISABLE_CHECKOUT_INFO_MESSAGE') && mits_check_disable_checkout()) {
     $smarty->assign('info_message', MODULE_MITS_DISABLE_CHECKOUT_INFO_MESSAGE);
+    $smarty->assign('error_message', MODULE_MITS_DISABLE_CHECKOUT_INFO_MESSAGE);
   }
+}
 //}

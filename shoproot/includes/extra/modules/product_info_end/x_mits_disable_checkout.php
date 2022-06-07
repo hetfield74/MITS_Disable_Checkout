@@ -12,8 +12,10 @@
  * --------------------------------------------------------------
  */
 
-if (mits_check_disable_checkout()) {
-  $info_smarty->clear_assign('ADD_CART_BUTTON_PAYPAL');
-  $info_smarty->clear_assign('PAYPAL_INSTALLMENT');
-  $info_smarty->clear_assign('ADD_CART_BUTTON_EXPRESS');
+if (defined('MODULE_MITS_DISABLE_CHECKOUT_STATUS') && MODULE_MITS_DISABLE_CHECKOUT_STATUS == 'true') {
+  if (mits_check_disable_checkout()) {
+    $info_smarty->clear_assign('ADD_CART_BUTTON_PAYPAL');
+    $info_smarty->clear_assign('PAYPAL_INSTALLMENT');
+    $info_smarty->clear_assign('ADD_CART_BUTTON_EXPRESS');
+  }
 }

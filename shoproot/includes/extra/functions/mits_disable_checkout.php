@@ -13,12 +13,10 @@
  */
 
 function mits_check_disable_checkout() {
-  if (defined(MODULE_MITS_DISABLE_CHECKOUT_STATUS) && MODULE_MITS_DISABLE_CHECKOUT_STATUS == 'true') {  
-    if (defined(MODULE_MITS_DISABLE_CHECKOUT_ENABLE) && MODULE_MITS_DISABLE_CHECKOUT_ENABLE == 'true') {
-      return true;
-    } else {
-      return false;
-    }
+  if (defined('MODULE_MITS_DISABLE_CHECKOUT_STATUS') && MODULE_MITS_DISABLE_CHECKOUT_STATUS == 'true'
+    && defined('MODULE_MITS_DISABLE_CHECKOUT_ENABLE') && MODULE_MITS_DISABLE_CHECKOUT_ENABLE == 'true'
+  ) {
+    return true;
   } else {
     return false;
   }

@@ -12,8 +12,8 @@
  * --------------------------------------------------------------
  */
 
-define('MODULE_MITS_DISABLE_CHECKOUT_TITLE', 'MITS Disable Checkout 1.0 <span style="white-space:nowrap;">&copy; by <span style="padding:2px;background:#ffe;color:#6a9;font-weight:bold;">Hetfield (<a href="https://www.merz-it-service.de/" target="_blank">MerZ IT-SerVice</a>)</span></span>');
-define('MODULE_MITS_DISABLE_CHECKOUT_DESCRIPTION', '<a href="https://www.merz-it-service.de/" target="_blank"><img src="'.DIR_WS_IMAGES.'merz-it-service.png" border="0" alt="" style="display:block;max-width:100%;height:auto;" /></a><br />
+define('MODULE_MITS_DISABLE_CHECKOUT_TITLE', 'MITS Disable Checkout <span style="white-space:nowrap;">&copy; by <span style="padding:2px;background:#ffe;color:#6a9;font-weight:bold;">Hetfield (<a href="https://www.merz-it-service.de/" target="_blank">MerZ IT-SerVice</a>)</span></span>');
+define('MODULE_MITS_DISABLE_CHECKOUT_DESCRIPTION', '<a href="https://www.merz-it-service.de/" target="_blank"><img src="' . DIR_WS_IMAGES . 'merz-it-service.png" border="0" alt="MerZ IT-SerVice" style="display:block;max-width:100%;height:auto;" /></a><br />
    <div>    
     Mit dem Modul MITS Disable Checkout wird auf Wunsch der Bestellvorgang im Shop deaktiviert.
   </div>

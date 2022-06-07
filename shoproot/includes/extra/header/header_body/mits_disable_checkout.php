@@ -12,10 +12,12 @@
  * --------------------------------------------------------------
  */
 
-if (basename($PHP_SELF) == FILENAME_SHOPPING_CART) {
-  if (mits_check_disable_checkout()) {
-    $smarty->assign('BUTTON_CHECKOUT', '');
-    $smarty->clear_assign('BUTTON_PAYPAL');
-    $smarty->clear_assign('ACTIVATE_EXPRESS_LINK');
+if (defined('MODULE_MITS_DISABLE_CHECKOUT_STATUS') && MODULE_MITS_DISABLE_CHECKOUT_STATUS == 'true') {
+  if (basename($PHP_SELF) == FILENAME_SHOPPING_CART) {
+    if (mits_check_disable_checkout()) {
+      $smarty->assign('BUTTON_CHECKOUT', '');
+      $smarty->clear_assign('BUTTON_PAYPAL');
+      $smarty->clear_assign('ACTIVATE_EXPRESS_LINK');
+    }
   }
 }
