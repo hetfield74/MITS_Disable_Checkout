@@ -17,6 +17,9 @@ define('MODULE_MITS_DISABLE_CHECKOUT_DESCRIPTION', '<a href="https://www.merz-it
    <div>    
     Mit dem Modul MITS Disable Checkout wird auf Wunsch der Bestellvorgang im Shop deaktiviert.
   </div>
+  
+  <p>Bei Fragen, Problemen oder W&uuml;nschen zu diesem Modul oder auch zu anderen Anliegen rund um die modified eCommerce Shopsoftware nehmen Sie einfach Kontakt zu uns auf:</p> 
+  <div style="text-align:center;"><a style="background:#6a9;color:#444" target="_blank" href="https://www.merz-it-service.de/Kontakt.html" class="button" onclick="this.blur();">Kontaktseite auf MerZ-IT-SerVice.de</strong></a></div>
 ');
 define('MODULE_MITS_DISABLE_CHECKOUT_STATUS_TITLE', 'Modul aktivieren?');
 define('MODULE_MITS_DISABLE_CHECKOUT_STATUS_DESC', 'Das Modul MITS Disable Checkout aktivieren?');

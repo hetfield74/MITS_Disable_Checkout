@@ -12,4 +12,4 @@
  * --------------------------------------------------------------
  */
 
-define('MODULE_MITS_DISABLE_CHECKOUT_INFO_MESSAGE', 'Unfortunately no orders are currently possible!');
+defined('MODULE_MITS_DISABLE_CHECKOUT_INFO_MESSAGE') or define('MODULE_MITS_DISABLE_CHECKOUT_INFO_MESSAGE', 'Unfortunately no orders are currently possible!');
